@@ -1,0 +1,181 @@
+@import "variables";
+#banner-image-article{
+  position: relative;
+}
+h1{
+  position: absolute;
+  bottom: 130px;
+  color: white;
+  width: 100%;
+  text-transform: uppercase;
+  height: 10px;
+  text-align: center;
+
+}
+/** Buttons **/
+.button a {
+  position: absolute;
+  display: inline-block;
+  padding: 8px 44px;
+  background:	transparent;
+  font-size: 22px;
+  margin: 8px 0;
+  bottom: 50px;
+  color: #fff;
+  font-weight: 700;
+  text-decoration: none;
+  border-radius: 2px;
+  border: 3px solid white;
+  transition: all 0.3s ease 0s;
+  text-align: center;
+
+}
+.button a:hover{
+  border: 3px solid #2ecc71;
+  color: #2ecc71;
+  background-color: transparent;
+
+}
+
+.mod_navigation {
+  margin-top: 60px;
+
+  .mod_navigation ul {
+    margin: 0;
+    padding: 0;
+
+  }
+}
+#header-image{
+  img{
+    width: 100%;
+
+  }
+}
+
+.sidebar{
+  position: fixed;
+  top: 20%;
+  z-index: 200;
+  transform: translateY(-20%);
+  color: white;
+  right: 0;
+
+
+  a{
+    color: white;
+    width: 130px;
+    padding: 25px;
+    text-decoration: none;
+    background: $yellow;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-family: Barlow Condensed;
+    margin: 20px 0;
+    display: block;
+    text-align: center;
+
+  }
+}
+.mod_article{
+  text-align: center;
+  text-transform: uppercase;
+
+  .button1 a{
+    display: inline-block;
+    padding: 12px 30px;
+    background:	$yellow;
+    font-size: 22px;
+    margin: 8px 0;
+    text-align: center;
+    color: #fff;
+    font-weight: 700;
+    border-radius: 2px;
+    border: 0;
+    transition: all 0.3s ease 0s;
+    text-decoration: none;
+
+  }
+}
+
+/*.row {
+
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto;
+  gap: 22px;
+  padding-bottom: 32px;
+}
+
+.row .images {
+
+  text-align: center;
+  border-radius: .80px;
+  background: white;
+}
+
+.row .images:hover {
+  background: #27ae60;
+}
+
+.row .images:hover h3 {
+  color: blue;
+}
+
+.row .images img {
+  height: 274px;
+
+
+}
+
+.row .images h3 {
+  font-size: 16px;
+  color: #130f40;
+
+}
+a{
+  text-decoration: none;
+  color: black;
+}
+
+@media screen and (max-width: 1600px) {
+
+  .row {
+
+    grid-template-columns: auto auto auto;
+
+  }
+
+}
+
+
+@media screen and (max-width: 769px) {
+  .row {
+    grid-template-columns: auto;
+  }
+}
+
+*/
+.ce_sliderStart {
+  background: white;
+}
+
+.slider-control {
+  height: 60px;
+}
+
+.slider-control .slider-menu {
+  font-size: 50px;
+  line-height: 55px;
+}
+
+.slider-control .slider-prev {
+  left: 170px;
+  width: 50px;
+  top: 4px;
+}
+
+.slider-control .slider-next {
+  right: 170px;
+  width: 50px;
+  top: 4px;
+}

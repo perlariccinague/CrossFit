@@ -10,7 +10,7 @@ module.exports = function(grunt) {
                     compass: false
                 },
                 files: {
-                    'files/assets/css/style.min.css': [
+                    'files/assets/css/style1.min.css': [
                         'files/assets/css/src/general.scss'
                     ]
                 }
