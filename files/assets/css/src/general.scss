@@ -5,3 +5,17 @@
 body{
   font-family:"Barlow Condensed", sans-serif;
 }
+/* Viewport min 768px */
+@media screen and (min-width: 768px) {
+ header, inside{
+   width: 100%;
+   padding: 0;
+ }
+}
+
+/* Viewport min 960px */
+@media screen and (min-width: 960px) {
+  #wrapper {
+    padding: 0;
+  }
+}

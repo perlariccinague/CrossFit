@@ -1,5 +1,5 @@
 @import "variables";
-#banner-image-article{
+.banner-image-article{
   position: relative;
 }
 h1{
@@ -46,7 +46,7 @@ h1{
 
   }
 }
-#header-image{
+.header-image{
   img{
     width: 100%;
 
@@ -81,12 +81,13 @@ h1{
   text-align: center;
   text-transform: uppercase;
 
-  .button1 a{
+  .button1 a,
+  button{
     display: inline-block;
     padding: 12px 30px;
     background:	$yellow;
     font-size: 22px;
-    margin: 8px 0;
+    margin: 50px 0;
     text-align: center;
     color: #fff;
     font-weight: 700;
@@ -94,88 +95,406 @@ h1{
     border: 0;
     transition: all 0.3s ease 0s;
     text-decoration: none;
+  }
+}
+button {
+  cursor: pointer;
+}
+.caroufredsel_skin{
+  position: relative;
+}
+
+.caroufredsel_controls .caroufredsel_prev {
+  position: absolute;
+  left: 90px;
+  top: 50%;
+  transform: translateY(-100%);
+  img{
+    width: 60px;
 
   }
 }
 
-/*.row {
+.caroufredsel_controls .caroufredsel_next {
+  position: absolute;
+  right: 90px;
+  top: 50%;
+  transform: translateY(-100%);
+  img{
+    width: 60px;
 
-  display: grid;
-  grid-template-columns: auto auto auto auto auto auto;
-  gap: 22px;
-  padding-bottom: 32px;
+  }
+}
+.image_container img{
+  margin: 0 8px;
 }
 
-.row .images {
-
+.caption{
   text-align: center;
-  border-radius: .80px;
-  background: white;
+  font-size: 21px;
+  font-weight: bolder;
+  letter-spacing: 1px;
 }
 
-.row .images:hover {
-  background: #27ae60;
+#menu-image-article{
+  position: relative;
+}
+#menu-image{
+  img{
+    width: 100%;
+
+  }
 }
 
-.row .images:hover h3 {
-  color: blue;
+/*#menu-image h1{
+  position: absolute;
+  margin: 700px 600px;
+}
+*/
+.button-right a {
+  position: absolute;
+  top: 50%;
+  right: 16%;
+  color: white;
+  padding: 12px;
+  font-weight: bolder;
+  text-decoration: none;
+  border: 3px solid white;
+  width: 150px;
+  transition: all 0.5s ease 0s;
+  font-family: Barlow Condensed;
+}
+#description{
+  position: absolute;
+  top: 45%;
+  left: 30%;
+
+}
+.image-slogan img{
+  position: absolute;
+  top: 38%;
+  right: 15%;
+}
+#container-main{
+ margin:  30px 8% 50px 8%;
 }
 
-.row .images img {
-  height: 274px;
+#text{
+  text-align: center;
+  text-transform: none;
+  line-height: 22px;
+  font-size: 18px;
+}
 
+
+.box-wrapper1 {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 57px 7%;
+  width: 90%;
+ max-width: 1550px;
+
+  .box-left1,  .box-middle1{
+     background: $gray;
+     color: white;
+     padding: 40px 40px 80px;
+    text-transform: none;
+    text-align: left;
+    font-size: 20px;
+    background-image: url("../layout/arrow-right.svg");
+    background-position: bottom 48px left 40px;
+    background-repeat: no-repeat;
+    background-size: 30px;
+    width: 30%;
+    box-sizing: border-box;
+  }
+  .box-right1, .box-left1, .box-middle1 p, h2, a{
+    color: white;
+  }
+
+  .box-right1{
+    background: $yellow;
+    color: white;
+    padding: 40px 40px 80px;
+    text-transform: none;
+    text-align: left;
+    font-size: 20px;
+    background-image: url("../layout/arrow-right.svg");
+    background-position: bottom 48px left 40px;
+    background-repeat: no-repeat;
+    background-size: 30px;
+    width: 30%;
+    box-sizing: border-box;
+  }
+
+}
+#image-description{
+  text-transform: none;
+  text-align: left;
+  font-size: 20px;
+  h2, h3{
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+}
+#image-description .text1{
+  margin-top: 8%;
+}
+.email:before {
+  content: "";
+  display: block;
+  background: url("../layout/mail.svg") no-repeat;
+  width: 30px;
+  height: 23px;
+  float: left;
+  margin: 0 6px 0 0;
+  background-size: 21px;
+}
+.telefon:before{
+  content: "";
+  display: block;
+  background: url("../layout/phone.svg") no-repeat;
+  width: 30px;
+  height: 23px;
+  float: left;
+  margin: 0 6px 0 0;
+  background-size: 21px;
+}
+figure.float_left {
+  margin-right: 88px;
+  width: 50%;
+}
+
+#formular{
+  float: right;
+  position: relative;
+  margin-right: 28%;
+  top: -45px;
+
+
+  li{
+    border: 1px solid black;
+    padding: 8px;
+    list-style: none;
+    a{
+      text-decoration: none;
+      color: black;
+    }
+  }
+  li:before{
+    content: "";
+    display: block;
+    background: url("../layout/download.svg") no-repeat;
+    width: 30px;
+    height: 23px;
+    float: left;
+    margin: 0 6px 0 0;
+    background-size: contain;
+  }
+}
+
+#block{
+  position: relative;
+  margin-top: 120px;
+  p{
+    text-transform: none;
+  }
+}
+/* Formlar Kursplan */
+#formular1 {
+ margin: -27px 40%;
+  padding: 20px;
+  li {
+    border: 1px solid black;
+    padding: 8px;
+    list-style: none;
+    a {
+      text-decoration: none;
+      color: black;
+    }
+  }
+  li:before{
+    content: "";
+    background: url("../layout/download.svg") no-repeat;
+    width: 29px;
+    height: 23px;
+    float: left;
+    background-size: contain;
+  }
+}
+/** Tabelle **/
+table {
+  width: 90%;
+  overflow: auto;
+  border-collapse: collapse;
+  border-spacing: 0;
+  border: 1px solid black;
+  margin: 40px 5% 95px;
+  max-width: 1550px;
+}
+
+th,td {
+  border: 1px solid black;
+  padding: 5px 10px;
 
 }
 
-.row .images h3 {
-  font-size: 16px;
-  color: #130f40;
+/*th {
+  background: $yellow;
+  font-weight: 600;
+  text-align: center;
+  color: white;
+  padding: 12px;
+  font-family: "Barlow Condensed";
+  font-size: 25px;
+} */
 
+.th {
+  background: $yellow;
+  font-weight: 600;
+  text-align: center;
+  color: white;
+  padding: 12px;
+  font-family: "Barlow Condensed";
+  font-size: 25px;
 }
-a{
+/* Kursplan*/
+.courses{
+
+  flex-wrap: wrap;
+  justify-content: space-between;
+  display: flex;
+  margin: 70px auto;
+  width: 90%;
+  max-width: 1550px;
+}
+.courses .ce_text {
+  width: 48%;
+  border: 2px solid gray;
+  margin: 8px auto;
+  box-sizing: border-box;
+  background-image: url("../layout/arrow-right1.svg");
+  background-position: bottom 10px right 275px;
+  background-repeat: no-repeat;
+  background-size: 60px;
+  figure{
+    float: left;
+    width: 48%;
+  }
+}
+.courses p, h2, a{
   text-decoration: none;
   color: black;
 }
+.courses h2, a{
+  text-transform: none;
+}
 
-@media screen and (max-width: 1600px) {
-
-  .row {
-
-    grid-template-columns: auto auto auto;
-
+.image-description1{
+  text-transform: none;
+  text-align: left;
+  font-size: 20px;
+  margin-top: 97px;
+  p, h2, h3{
+    text-transform: none;
+    margin-left: 5%;
+    font-family: "Barlow Condensed";
+    line-height: 32px;
+  }
+  h2{
+    text-transform: uppercase;
+  }
+}
+#image-description2{
+  text-transform: none;
+  text-align: left;
+  font-size: 20px;
+  margin-top: 97px;
+  p, h2{
+    text-transform: none;
+    margin-right: -7%;
+    font-family: "Barlow Condensed";
+    line-height: 32px;
+    margin-bottom: 15px;
+  }
+  h2{
+    text-transform: uppercase;
+  }
+  figure.float_left {
+    margin-right: 242px;
+    margin-top: 121px;
+  }
+}
+#image-description3{
+  text-transform: none;
+  text-align: left;
+  font-size: 20px;
+  margin-top: 97px;
+  p, h2{
+    text-transform: none;
+    margin-right: 5%;
+    font-family: "Barlow Condensed";
+    line-height: 32px;
+    margin-bottom: 15px;
+  }
+  h2{
+    text-transform: uppercase;
+  }
+  figure.float_left {
+    margin-right: 242px;
+  }
+}
+#image-description1{
+  text-transform: none;
+  background: url("/files/assets/layout/lift-bg2.png") no-repeat bottom right/cover;
+  min-height: 80vh;
+  margin-top: 0;
+  text-align: left;
+  font-size: 20px;
+  p, h2, h3{
+    text-transform: none;
+    margin-left: 20%;
+    font-family: "Barlow Condensed";
+    line-height: 32px;
+  }
+  h2, h3{
+    text-transform: uppercase;
+  }
+}
+#image-description1 .text{
+  margin-top: 7%;
   }
 
+.coaches{
+  width: 90%;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  display: flex;
+  margin: 89px auto;
+  max-width: 1550px;
+}
+/* Formular */
+.formbody{
+  margin-top: 100px;
+  margin-right: -53%;
+}
+label{
+  display: block;
 }
 
-
-@media screen and (max-width: 769px) {
-  .row {
-    grid-template-columns: auto;
-  }
-}
-
-*/
-.ce_sliderStart {
-  background: white;
-}
-
-.slider-control {
-  height: 60px;
-}
-
-.slider-control .slider-menu {
-  font-size: 50px;
-  line-height: 55px;
-}
-
-.slider-control .slider-prev {
-  left: 170px;
-  width: 50px;
-  top: 4px;
-}
-
-.slider-control .slider-next {
-  right: 170px;
-  width: 50px;
-  top: 4px;
+input,
+textarea,
+select {
+  margin-bottom: 32px;
+  padding: 8px;
+  border: 1px solid #999;
+  outline: 0;
+  width: 15%;
+  border-radius: 2px;
+  background: $yellow;
+  text-transform: uppercase;
+  font-size: 15px;
+  font-family: "Barlow Condensed";
+  color: white;
 }
