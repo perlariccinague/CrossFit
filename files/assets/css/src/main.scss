@@ -17,7 +17,7 @@ h1{
   position: absolute;
   display: inline-block;
   padding: 8px 44px;
-  background:	transparent;
+  background: transparent;
   font-size: 22px;
   margin: 8px 0;
   bottom: 50px;
@@ -28,22 +28,19 @@ h1{
   border: 3px solid white;
   transition: all 0.3s ease 0s;
   text-align: center;
-
 }
 .button a:hover{
   border: 3px solid #2ecc71;
   color: #2ecc71;
   background-color: transparent;
-
+  transform: rotate(-45deg);
 }
-
 .mod_navigation {
   margin-top: 60px;
 
   .mod_navigation ul {
     margin: 0;
     padding: 0;
-
   }
 }
 .header-image{
