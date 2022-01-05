@@ -16,10 +16,10 @@ h1{
 .button a {
   position: absolute;
   display: inline-block;
-  padding: 8px 44px;
+  padding: 8px 8px;
   background: transparent;
-  font-size: 22px;
-  margin: 8px 0;
+  font-size: 20px;
+  margin: 8px -5%;
   bottom: 50px;
   color: #fff;
   font-weight: 700;
@@ -28,6 +28,7 @@ h1{
   border: 3px solid white;
   transition: all 0.3s ease 0s;
   text-align: center;
+  width: 10%;
 }
 .button a:hover{
   border: 3px solid #2ecc71;
@@ -78,8 +79,7 @@ h1{
   text-align: center;
   text-transform: uppercase;
 
-  .button1 a,
-  button{
+  .button1 a {
     display: inline-block;
     padding: 12px 30px;
     background:	$yellow;
@@ -96,6 +96,7 @@ h1{
 }
 button {
   cursor: pointer;
+
 }
 .caroufredsel_skin{
   position: relative;
@@ -160,6 +161,7 @@ button {
   width: 150px;
   transition: all 0.5s ease 0s;
   font-family: Barlow Condensed;
+  text-transform: uppercase;
 }
 #description{
   position: absolute;
@@ -263,7 +265,7 @@ figure.float_left {
   width: 50%;
 }
 
-#formular{
+.formular{
   float: right;
   position: relative;
   margin-right: 28%;
@@ -371,10 +373,8 @@ th,td {
   border: 2px solid gray;
   margin: 8px auto;
   box-sizing: border-box;
-  background-image: url("../layout/arrow-right1.svg");
-  background-position: bottom 10px right 275px;
-  background-repeat: no-repeat;
-  background-size: 60px;
+  text-align: left;
+  font-size: 17px;
   figure{
     float: left;
     width: 48%;
@@ -388,63 +388,75 @@ th,td {
   text-transform: none;
 }
 
+.arrow-right:before, .arrow-right1:before{
+  content: "";
+  background: url("../layout/arrow-right1.svg") no-repeat;
+  width: 50px;
+  height: 67px;
+  float: left;
+  background-size: 60px;
+}
+.arrow-right a, .arrow-right1 a{
+  position: absolute;
+  margin: 15px;
+  font-size: 17px;
+}
 .image-description1{
   text-transform: none;
   text-align: left;
   font-size: 20px;
-  margin-top: 97px;
-  p, h2, h3{
+  width: 95%;
+  max-width: 1550px;
+  margin: 97px auto;
+  min-height: 80vh;
+ .left-text{
     text-transform: none;
-    margin-left: 5%;
     font-family: "Barlow Condensed";
     line-height: 32px;
   }
-  h2{
+
+  h2 {
     text-transform: uppercase;
   }
+  .float_above {
+    position: absolute;
+    right: 0;
+    width: 50vw;
+
+    img {
+      width: 100%;
+    }
+  }
 }
-#image-description2{
+.image-description2 {
   text-transform: none;
   text-align: left;
   font-size: 20px;
-  margin-top: 97px;
-  p, h2{
+  width: 95%;
+  max-width: 1550px;
+  margin: 97px 54%;
+  min-height: 80vh;
+.right-text {
     text-transform: none;
-    margin-right: -7%;
     font-family: "Barlow Condensed";
     line-height: 32px;
-    margin-bottom: 15px;
   }
-  h2{
+  h2 {
     text-transform: uppercase;
   }
-  figure.float_left {
-    margin-right: 242px;
-    margin-top: 121px;
+.float_above {
+    position: absolute;
+    left: 0;
+    width: 50vw;
+  img {
+      width: 100%;
+    }
   }
 }
-#image-description3{
-  text-transform: none;
-  text-align: left;
-  font-size: 20px;
-  margin-top: 97px;
-  p, h2{
-    text-transform: none;
-    margin-right: 5%;
-    font-family: "Barlow Condensed";
-    line-height: 32px;
-    margin-bottom: 15px;
-  }
-  h2{
-    text-transform: uppercase;
-  }
-  figure.float_left {
-    margin-right: 242px;
-  }
-}
+
 #image-description1{
   text-transform: none;
-  background: url("/files/assets/layout/lift-bg2.png") no-repeat bottom right/cover;
+  background: url("../layout/lift-bg2.png") no-repeat bottom right/cover;
   min-height: 80vh;
   margin-top: 0;
   text-align: left;
@@ -460,7 +472,7 @@ th,td {
   }
 }
 #image-description1 .text{
-  margin-top: 7%;
+  margin: 13% -25%;
   }
 
 .coaches{
@@ -477,16 +489,35 @@ th,td {
   margin-right: -53%;
 }
 label{
-  display: block;
+  display: inline-block ;
+  margin-right: 8%;
+  padding: 8px;
+  border: 2px solid #999;
+  outline: 0;
+  width: 7%;
+  border-radius: 2px;
+  background: white;
+  text-transform: none;
+  font-size: 15px;
+  font-family: "Barlow Condensed";
+  color: black;
+  margin-top: -10px;
+  letter-spacing: 1px;
+}
+label:before{
+  content: "";
+  background: url("../layout/upload.svg") no-repeat;
+  width: 29px;
+  height: 23px;
+  float: left;
+  background-size: contain;
 }
 
 input,
-textarea,
-select {
+textarea{
   margin-bottom: 32px;
   padding: 8px;
   border: 1px solid #999;
-  outline: 0;
   width: 15%;
   border-radius: 2px;
   background: $yellow;
@@ -494,4 +525,25 @@ select {
   font-size: 15px;
   font-family: "Barlow Condensed";
   color: white;
+}
+.upload{
+  display: none;
+}
+.submit{
+  cursor: pointer;
+  background: $yellow;
+  color: white;
+  width: 5%;
+  margin-right: 10%;
+  padding: 8px;
+  margin-top: 20px;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  padding: 12px 30px;
+  text-decoration: none;
+  border-radius: 2px;
+  border: 0;
+  font-weight: 700;
+  display: inline-block;
+  font-size: 15px;
 }
